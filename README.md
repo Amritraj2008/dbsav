@@ -31,6 +31,7 @@ Read [this](https://telegram.dog/TeamEvamaria/12) before you start messing up wi
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used separated by space )
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
 * Check [info.py](https://github.com/EvamariaTG/evamaria/blob/master/info.py) for more
+Heroku.com
 
 
 ## Deploy
