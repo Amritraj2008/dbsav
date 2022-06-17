@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/Tech_sav_bots'),
+            InlineKeyboardButton('Tutorial', url='https://telegra.ph/MOVIESCARTOONS-A-BOT-PROVIDED-BY-THE-CHANNEL-MOVIES-AND-CARTOONS-WORLD-URL-HTTPSTMEMOVIESCARTOONS-06-15'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
