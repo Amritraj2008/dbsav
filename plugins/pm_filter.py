@@ -439,7 +439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Tutorial', url='https://telegra.ph/MOVIESCARTOONS-A-BOT-PROVIDED-BY-THE-CHANNEL-MOVIES-AND-CARTOONS-WORLD-URL-HTTPSTMEMOVIESCARTOONS-06-15'),
-            InlineKeyboardButton('♥️ Request', callback_data='source')
+            InlineKeyboardButton('♥️ Request', callback_data='request')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -450,13 +450,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "source":
+    elif query.data == "request":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.SOURCE_TXT,
+            text=script.REQUEST_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
