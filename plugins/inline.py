@@ -91,7 +91,7 @@ async def answer(bot, query):
     else:
         switch_pm_text = f'{emoji.CROSS_MARK} No results'
         if string:
-            switch_pm_text += f' for "{string}"'
+            switch_pm_text += f' for "{string}" Go to @req1bot '
 
         await query.answer(results=[],
                            is_personal = True,
