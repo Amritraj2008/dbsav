@@ -22,7 +22,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/5fd4e37fb573c69f6f7a5.jpg https://telegra.ph/file/7554732018ba632d7f601.jpg https://telegra.ph/file/cbc9317c071919859345c.jpg https://telegra.ph/file/78448b5dc11f6c2f25f12.jpg https://telegra.ph/file/d9caeb43aba96a09c8d7e.jpg https://telegra.ph/file/15f72fbe52b6af3d797a1.jpg https://telegra.ph/file/160c4c9328b23ef849f49.jpg https://telegra.ph/file/73807824f791028a3d50d.jpg https://telegra.ph/file/f73b1850b4451de726d2f.jpg https://telegra.ph/file/9b6ec3523d3d06fb7cf52.jpg https://telegra.ph/file/dd6e14f2c2e9c8c8a5770.jpg https://telegra.ph/file/d5789af9726e07fa869ae.jpg https://telegra.ph/file/a3e4e4623d7fa1df1c91f.jpg https://telegra.ph/file/5e10aba4f653632ed1521.jpg https://telegra.ph/file/0b77264357cf003b6ad56.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001733097568').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -33,7 +33,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Samriddhi:AaSs$def123@gjhff.vvelu.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Gjhff")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
