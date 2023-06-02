@@ -17,7 +17,7 @@ API_HASH = environ.get('API_HASH', 'b682525d7bd7be0b7f61502cc1c8b22e')
 BOT_TOKEN = environ.get('BOT_TOKEN', '5059084467:AAGcMRUcbJCLDC2pbMBzeBWvazVJtj8Vv0w')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', '300'))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/5fd4e37fb573c69f6f7a5.jpg https://telegra.ph/file/7554732018ba632d7f601.jpg https://telegra.ph/file/cbc9317c071919859345c.jpg https://telegra.ph/file/78448b5dc11f6c2f25f12.jpg https://telegra.ph/file/d9caeb43aba96a09c8d7e.jpg https://telegra.ph/file/15f72fbe52b6af3d797a1.jpg https://telegra.ph/file/160c4c9328b23ef849f49.jpg https://telegra.ph/file/73807824f791028a3d50d.jpg https://telegra.ph/file/f73b1850b4451de726d2f.jpg https://telegra.ph/file/9b6ec3523d3d06fb7cf52.jpg https://telegra.ph/file/dd6e14f2c2e9c8c8a5770.jpg https://telegra.ph/file/d5789af9726e07fa869ae.jpg https://telegra.ph/file/a3e4e4623d7fa1df1c91f.jpg https://telegra.ph/file/5e10aba4f653632ed1521.jpg https://telegra.ph/file/0b77264357cf003b6ad56.jpg')).split()
 
